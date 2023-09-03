@@ -1662,7 +1662,11 @@ if(! localStorage.getItem('totalWrong')){
 }
 
 if(! localStorage.getItem('myName')){
+<<<<<<< HEAD
     localStorage.setItem('myName','William Walsh')
+=======
+    localStorage.setItem('myName','Jacob Harper')
+>>>>>>> cd043c63553b1857c3fc8a700c6a1e74a358b023
 }
 document.querySelector('.namebar p').innerText=`${localStorage.getItem('myName')}`
 if(! localStorage.getItem('IsNew')){
