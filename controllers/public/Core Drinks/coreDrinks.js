@@ -15,12 +15,12 @@ function nameShortener(name){
     
 }
 
-let vercel = 'https://walshpos.vercel.app/api/coredrinks'
-let local = 'https://walshpos.vercel.app/api/coredrinks'
+let render = 'https://walshpos.onrender.com/api/coredrinks'
+let local = 'https://walshpos.onrender.com/api/coredrinks'
 async function apiRequest(){
     
     try{
-        const response = await fetch(heroku)
+        const response = await fetch(render)
         const data = await response.json()
 
         Object.keys(data).forEach((element)=>{

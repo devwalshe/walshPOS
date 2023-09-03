@@ -31,7 +31,7 @@ changeTheLinks(window.location.href.toString())
 async function apiRequest(){
     
     try{
-        const response = await fetch(`https://walshpos.vercel.app/api/coredrinks`)
+        const response = await fetch(`https://walshpos.onrender.com/api/coredrinks`)
         const data = await response.json()
 
         Object.keys(data).forEach(key => {
