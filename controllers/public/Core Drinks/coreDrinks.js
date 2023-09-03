@@ -15,8 +15,8 @@ function nameShortener(name){
     
 }
 
-let heroku = 'https://coffee-trainer.herokuapp.com/api/coredrinks'
-let local = 'http://localhost:8000/api/coredrinks'
+let vercel = 'https://walshpos.vercel.app/api/coredrinks'
+let local = 'https://walshpos.vercel.app/api/coredrinks'
 async function apiRequest(){
     
     try{

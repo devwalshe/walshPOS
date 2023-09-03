@@ -656,8 +656,8 @@ function addTheIcedWord() {
 
 
 
-let heroku = 'https://coffee-trainer.herokuapp.com/api/coredrinks'
-let local = 'http://localhost:8000/api/coredrinks'
+let vercel = 'https://walshpos.vercel.app/api/coredrinks'
+let local = 'https://walshpos.vercel.app/api/coredrinks'
 
 const statusLight = document.querySelector('.statusLight')
 async function apiRequest(url) {  //Calls the API and brings drink data to the 
@@ -705,7 +705,7 @@ function shuffle(array) {
 
 async function allcustom() {
     try {
-        const response = await fetch('http://localhost:8000/api/allnames')
+        const response = await fetch('https://walshpos.vercel.app/api/allnames')
         const data = await response.json()
         console.log(data)
     }
@@ -1409,7 +1409,7 @@ function errorMessage(message, color) {
 
 let postUrl
 let production = 'dev'
-let uhhh = "https://coffee-trainer.herokuapp.com/menu"
+let uhhh = "https://walshpos.vercel.app/menu"
 function dynamicURL(word) {
     let loc = window.location.href.includes('coffee')
     if (loc) {
@@ -1421,22 +1421,22 @@ function dynamicURL(word) {
 }
 dynamicURL()
 if (production === 'dev') {
-    localStorage.setItem('LastClicked', ["http://localhost:8000/api/customizations", local, 'http://localhost:8000/api/customers', 'https://localhost:8000/order'])
+    localStorage.setItem('LastClicked', ["https://walshpos.vercel.app/api/customizations", local, 'https://walshpos.vercel.app/api/customers', 'https://localhost:8000/order'])
     removeAllChildNodes(document.querySelector('.items'))
     removeAllChildNodes(document.querySelector('.drinkType'))
-    apiRequestForCustomizations("http://localhost:8000/api/customizations")
+    apiRequestForCustomizations("https://walshpos.vercel.app/api/customizations")
     apiRequest(local)
-    apiRequestCustomer('http://localhost:8000/api/customers')
-    postUrl = 'http://localhost:8000/order'
+    apiRequestCustomer('https://walshpos.vercel.app/api/customers')
+    postUrl = 'https://walshpos.vercel.app/order'
 } else
     if (production === 'live') {
-        localStorage.setItem('LastClicked', ["https://coffee-trainer.herokuapp.com/api/customizations", heroku, "https://coffee-trainer.herokuapp.com/api/customers,'https://coffee-trainer.herokuapp.com/order'"])
+        localStorage.setItem('LastClicked', ["https://walshpos.vercel.app/api/customizations", heroku, "https://walshpos.vercel.app/api/customers,'https://walshpos.vercel.app/order'"])
         removeAllChildNodes(document.querySelector('.items'))
         removeAllChildNodes(document.querySelector('.drinkType'))
-        apiRequestForCustomizations("https://coffee-trainer.herokuapp.com/api/customizations")
-        apiRequestCustomer('https://coffee-trainer.herokuapp.com/api/customers')
+        apiRequestForCustomizations("https://walshpos.vercel.app/api/customizations")
+        apiRequestCustomer('https://walshpos.vercel.app/api/customers')
         apiRequest(heroku)
-        postUrl = 'https://coffee-trainer.herokuapp.com/order'
+        postUrl = 'https://walshpos.vercel.app/order'
     }
 
 document.querySelectorAll('.findOrder').forEach((elem) => {
@@ -1662,11 +1662,7 @@ if (!localStorage.getItem('totalWrong')) {
 }
 
 if (!localStorage.getItem('myName')) {
-<<<<<<< HEAD
-    localStorage.setItem('myName', 'William Walsh')
-=======
     localStorage.setItem('myName','Jacob Harper')
->>>>>>> cd043c63553b1857c3fc8a700c6a1e74a358b023
 }
 document.querySelector('.namebar p').innerText = `${localStorage.getItem('myName')}`
 if (!localStorage.getItem('IsNew')) {
