@@ -9,34 +9,25 @@
   },
   "repository": {
     "type": "git",
-<<<<<<< HEAD
     "url": "git+https://github.com/devwalshe/Pos-sim.git"
-=======
-    "url": "git+https://github.com/jacobharper259/Coffee-API.git"
->>>>>>> cd043c63553b1857c3fc8a700c6a1e74a358b023
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-<<<<<<< HEAD
     "url": "https://github.com/devwalshe/Pos-sim/issues"
   },
   "homepage": "https://github.com/devwalshe/Pos-sim#readme",
-=======
-    "url": "https://github.com/jacobharper259/Coffee-API/issues"
-  },
-  "homepage": "https://github.com/jacobharper259/Coffee-API#readme",
->>>>>>> cd043c63553b1857c3fc8a700c6a1e74a358b023
+
   "dependencies": {
-    "add-event-to-calendar": "^1.0.7",
-    "body-parser": "^1.20.0",
-    "cors": "^2.8.5",
-    "express": "^4.18.1",
-    "file-saver": "^2.0.5",
-    "mongodb": "^4.9.1",
-    "typescript": "^4.8.3"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.1"
-  }
+  "add-event-to-calendar": "^1.0.7",
+  "body-parser": "^1.20.0",
+  "cors": "^2.8.5",
+  "express": "^4.18.1",
+  "file-saver": "^2.0.5",
+  "mongodb": "^4.9.1",
+  "typescript": "^4.8.3"
+},
+"devDependencies": {
+  "nodemon": "^3.0.1"
+}
 }
