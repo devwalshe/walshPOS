@@ -15,8 +15,8 @@ function nameShortener(name){
     
 }
 
-let render = 'https://walshpos.onrender.com/api/coredrinks'
-let local = 'https://walshpos.onrender.com/api/coredrinks'
+let render = 'https://walshepos.vercel.app/api/coredrinks'
+let local = 'https://walshepos.vercel.app/api/coredrinks'
 async function apiRequest(){
     
     try{
